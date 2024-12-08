@@ -1,2 +1,2 @@
-# test
+# Paths-of-Wisdom
 This project was created as a thoughtful resource for exploring religious philosophy. It features a collection of lessons designed to provide insights, encourage critical thinking, and foster understanding of philosophical concepts within various religious traditions. Developed initially for a friend, it aims to serve a broader audience interested in the intersection of religion and philosophy.
