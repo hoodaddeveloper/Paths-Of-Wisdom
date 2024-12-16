@@ -111,9 +111,7 @@ h6,
 # Navigation Menu
 --------------------------------------------------------------*/
 
-/**
-* Desktop Navigation 
-*/
+/* Desktop Navigation */
 
 .navbar {
   padding: 0;
@@ -226,9 +224,7 @@ h6,
   }
 }
 
-/**
-* Mobile Navigation 
-*/
+/* Mobile Navigation */
 
 .mobile-nav-toggle {
   color: #fff;
@@ -617,6 +613,14 @@ section {
   border-radius: 15px;
 }
 
+.section-background {
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/shin-bg.jpg');
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -675,15 +679,15 @@ section {
 
 .services .icon-box {
   padding: 30px;
-  position: relative;
   overflow: hidden;
   margin: 0 0 40px 0;
+  position: relative;
   background: #fff;
-  box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
-  transition: all 0.3s ease-in-out;
   text-align: center;
-  border: 1px solid #fff;
   border-radius: 20px;
+  border: 1px solid #fff;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
 }
 
 .services .icon {
@@ -1414,7 +1418,7 @@ section {
   }
 }
 
-/*** Wave Animations ***/
+/* Wave Animations */
 
 .waves-1 {
   z-index: 8;
@@ -1482,7 +1486,7 @@ section {
   }
 }
 
-/*** Shrinking for mobile ***/
+/* Shrinking for mobile */
 
 @media (max-width: 768px) {
   .waves-1 {
@@ -1506,7 +1510,7 @@ section {
   }
 }
 
-/*** Border Animation ***/
+/* Border Animation */
 
 @property --angle {
   syntax: '<angle>';
@@ -1580,7 +1584,8 @@ section {
   }
 }
 
-/*** Zarin Pal ***/
+/* Zarin Pal */
+
 #zarinpal {
   margin: auto
 }
