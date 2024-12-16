@@ -1593,3 +1593,8 @@ section {
 #zarinpal img {
   width: 80px;
 }
+
+/* Media Query for Smartphone Screens */
+@media (max-width: 576px) {
+  
+}
