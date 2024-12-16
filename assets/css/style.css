@@ -6,6 +6,13 @@ body {
   color: #444;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: auto;
+    min-width: 1024px;
+  }
+}
+
 a {
   color: #4fa6d5;
   text-decoration: none;
@@ -1086,7 +1093,7 @@ section {
 }
 
 @media (max-width: 991px) {
-  #swiper-wrapper-e7347c3512a07a101 > div.w-50.swiper-slide.swiper-slide-active {
+  #swiper-wrapper-e7347c3512a07a101>div.w-50.swiper-slide.swiper-slide-active {
     left: 0;
     top: 0;
   }
