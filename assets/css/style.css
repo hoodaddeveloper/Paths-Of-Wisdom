@@ -4,6 +4,8 @@
 
 body {
   color: #444;
+  overflow-x: auto;
+  min-width: 1200px;
 }
 
 @media (max-width: 1024px) {
