@@ -4,12 +4,14 @@
 
 body {
   color: #444;
+  min-width: 100%;
+  overflow-x: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 576px) {
   body {
+    min-width: 100%;
     overflow-x: auto;
-    min-width: 1920px;
   }
 }
 
