@@ -9,7 +9,7 @@ body {
 @media screen and (max-width: 768px) {
   body {
     overflow-x: auto;
-    min-width: 1024px;
+    min-width: 1920px;
   }
 }
 
