@@ -6,6 +6,7 @@ body {
   color: #444;
   overflow-x: auto;
   min-width: 1200px;
+  overflow-x: hidden;
 }
 
 @media (max-width: 1024px) {
