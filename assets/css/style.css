@@ -234,14 +234,14 @@ h6,
 
 /* Mobile Navigation */
 
-/* .mobile-nav-toggle {
+.mobile-nav-toggle {
   color: #fff;
   display: none;
   line-height: 0;
   cursor: pointer;
   font-size: 28px;
   transition: 0.5s;
-} */
+}
 
 /* @media (max-width: 991px) {
   body {
