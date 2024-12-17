@@ -265,7 +265,7 @@ h6,
   }
 } */
 
-/* .navbar-mobile {
+.navbar-mobile {
   top: 0;
   left: 0;
   right: 0;
@@ -345,7 +345,7 @@ h6,
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
-} */
+}
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -688,7 +688,7 @@ section {
   display: inline-block;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .breadcrumbs .d-flex {
     display: block !important;
   }
@@ -700,7 +700,7 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
-} */
+}
 
 /*--------------------------------------------------------------
 # Blog
