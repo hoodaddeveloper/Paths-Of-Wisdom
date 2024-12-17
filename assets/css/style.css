@@ -358,6 +358,20 @@ h6,
   position: relative;
 }
 
+@media (max-width: 768px) {
+  #hero {
+    height: 50vh !important;
+  }
+
+  #hero::after,
+  #hero::before {
+    height: 50vh;
+    /* Match the pseudo-element height with the hero */
+    border-radius: 0 0 50% 50%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
 #hero::after {
   top: 0;
   left: 50%;
