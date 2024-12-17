@@ -360,7 +360,7 @@ h6,
 
 @media (max-width: 914px) {
   #hero {
-    height: 50vh !important;
+    height: 35vh !important;
   }
 
   #hero::after,
