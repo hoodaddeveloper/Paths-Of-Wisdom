@@ -365,10 +365,10 @@ h6,
 
   #hero::after,
   #hero::before {
-    height: 50vh;
+    height: 35vh !important;
     /* Match the pseudo-element height with the hero */
-    border-radius: 0 0 50% 50%;
-    transform: translateX(-50%) rotate(0deg);
+    border-radius: 0 0 50% 50% !important;
+    transform: translateX(-50%) rotate(0deg) !important;
   }
 }
 
