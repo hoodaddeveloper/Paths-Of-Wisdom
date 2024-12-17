@@ -1319,11 +1319,11 @@ section {
 
 /* Mobile View */
 
-/* @media (max-width: 991px) {
+@media (max-width: 991px) {
   .allame-pic {
     display: none;
   }
-} */
+}
 
 /*--------------------------------------------------------------
 # Footer
@@ -2036,7 +2036,7 @@ section {
 
 /* Shrinking for mobile */
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .waves-1 {
     height: 40px;
     min-height: 40px;
@@ -2056,7 +2056,7 @@ section {
   .content {
     height: 30vh;
   }
-} */
+}
 
 /* Border Animation */
 
