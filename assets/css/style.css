@@ -9,10 +9,9 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1200px) {
   body {
-    width: 1024px;
-    overflow-x: scroll;
+    min-width: 1200px;
   }
 }
 
@@ -459,10 +458,19 @@ h6,
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #hero::after {
     width: 180%;
     height: 95%;
+    border-radius: 0 0 50% 50%;
+    transform: translateX(-50%) rotate(0deg);
+  } */
+
+@media (max-width: 768px) {
+  #hero::after {
+    width: 180%;
+    height: 100%;
+    background-size: cover;
     border-radius: 0 0 50% 50%;
     transform: translateX(-50%) rotate(0deg);
   }
@@ -473,6 +481,19 @@ h6,
     height: 94%;
     border-radius: 0 0 50% 50%;
     transform: translateX(-50%) translateY(20px) rotate(4deg);
+  }
+}
+
+/* New */
+
+@media (max-width: 768px) {
+  #hero .carousel-control-prev,
+  #hero .carousel-control-next {
+    width: 15%;
+  }
+  #hero .carousel-control-prev-icon,
+  #hero .carousel-control-next-icon {
+    font-size: 24px;
   }
 }
 
