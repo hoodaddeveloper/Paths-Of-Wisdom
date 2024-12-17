@@ -234,16 +234,16 @@ h6,
 
 /* Mobile Navigation */
 
-.mobile-nav-toggle {
+/* .mobile-nav-toggle {
   color: #fff;
   display: none;
   line-height: 0;
   cursor: pointer;
   font-size: 28px;
   transition: 0.5s;
-}
+} */
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   body {
     direction: rtl;
   }
@@ -263,9 +263,9 @@ h6,
   #navbar>ul>li:nth-child(1)>a {
     padding-left: 20px !important;
   }
-}
+} */
 
-.navbar-mobile {
+/* .navbar-mobile {
   top: 0;
   left: 0;
   right: 0;
@@ -345,7 +345,7 @@ h6,
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
-}
+} */
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -688,7 +688,7 @@ section {
   display: inline-block;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .breadcrumbs .d-flex {
     display: block !important;
   }
@@ -700,7 +700,7 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Blog
@@ -1319,11 +1319,11 @@ section {
 
 /* Mobile View */
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .allame-pic {
     display: none;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Footer
@@ -2036,7 +2036,7 @@ section {
 
 /* Shrinking for mobile */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .waves-1 {
     height: 40px;
     min-height: 40px;
@@ -2056,7 +2056,7 @@ section {
   .content {
     height: 30vh;
   }
-}
+} */
 
 /* Border Animation */
 
