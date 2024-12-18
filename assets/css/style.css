@@ -361,7 +361,7 @@ h6,
 /* Ensure consistent layout for devices with smaller screens */
 @media (max-width: 1200px) {
   #hero {
-    height: 40vh !important;
+    height: 38vh !important;
   }
 }
 
