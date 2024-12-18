@@ -119,8 +119,6 @@ h6,
 # Navigation Menu
 --------------------------------------------------------------*/
 
-/* Desktop Navigation */
-
 .navbar {
   padding: 0;
 }
@@ -163,7 +161,7 @@ h6,
 
 .navbar a:hover,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #fbbd4b;
 }
 
@@ -199,11 +197,11 @@ h6,
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #68a4c4;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   top: 100%;
   opacity: 1;
   visibility: visible;
@@ -215,7 +213,7 @@ h6,
   left: calc(100% - 30px);
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   top: 0;
   left: 100%;
   opacity: 1;
@@ -227,14 +225,14 @@ h6,
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
 
 /* Mobile Navigation */
 
-.mobile-nav-toggle {
+/* .mobile-nav-toggle {
   color: #fff;
   display: none;
   line-height: 0;
@@ -345,7 +343,7 @@ h6,
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
-}
+} */
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -358,7 +356,6 @@ h6,
   position: relative;
 }
 
-/* Ensure consistent layout for devices with smaller screens */
 @media (max-width: 1200px) {
   #hero {
     height: 38vh !important;
@@ -369,20 +366,22 @@ h6,
   top: 0;
   left: 50%;
   z-index: 0;
-  width: 130%;
+  width: 120%;
   height: 95%;
   content: "";
   position: absolute;
   border-radius: 0 0 50% 50%;
+  background-size: 84% !important;
   transform: translateX(-50%) rotate(0deg);
-  background: url("../img/hero-bg.jpg") right no-repeat;
+  background-position: center center !important;
+  background: url("../img/ss/hero-bg5.jpg") right no-repeat;
 }
 
 #hero::before {
   top: 0;
   left: 50%;
   z-index: 0;
-  width: 130%;
+  width: 120%;
   content: "";
   height: 96%;
   opacity: 0.4;
@@ -533,70 +532,6 @@ h6,
 }
 
 /*--------------------------------------------------------------
-# Hero No Slider Section
---------------------------------------------------------------*/
-
-#hero-no-slider {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-}
-
-#hero-no-slider::before {
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  content: "";
-  position: absolute;
-  background: linear-gradient(to right,
-      rgba(30, 67, 86, 0.8),
-      rgba(30, 67, 86, 0.6)),
-    url("../img/hero-bg.jpg") center top no-repeat;
-}
-
-#hero-no-slider h2 {
-  color: #fff;
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-#hero-no-slider p {
-  color: #fff;
-}
-
-#hero-no-slider .btn-get-started {
-  margin: 10px;
-  color: #fff;
-  line-height: 1;
-  font-size: 14px;
-  transition: 0.5s;
-  font-weight: 500;
-  padding: 12px 32px;
-  letter-spacing: 1px;
-  border-radius: 50px;
-  display: inline-block;
-  animation-delay: 0.8s;
-  border: 2px solid #68a4c4;
-  font-family: "Roboto", sans-serif;
-}
-
-#hero-no-slider .btn-get-started:hover {
-  color: #fff;
-  background: #68a4c4;
-  text-decoration: none;
-}
-
-/* @media (max-width: 575px) {
-  #hero-no-slider h2 {
-    font-size: 30px;
-  }
-} */
-
-/*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 
@@ -684,11 +619,11 @@ section {
   list-style: none;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   content: "/";
   color: #6c757d;
   padding-right: 10px;
@@ -891,7 +826,7 @@ section {
   box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
 }
 
-.why-us .icon-box+.icon-box {
+.why-us .icon-box + .icon-box {
   margin-top: 50px;
 }
 
@@ -1076,7 +1011,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   opacity: 1;
   width: 12px;
   height: 12px;
@@ -1084,7 +1022,10 @@ section {
   border: 1px solid #68a4c4;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #68a4c4;
 }
 
@@ -1107,7 +1048,7 @@ section {
   list-style: none;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1126,7 +1067,8 @@ section {
 }
 
 @media (max-width: 991px) {
-  #swiper-wrapper-e7347c3512a07a101>div.w-50.swiper-slide.swiper-slide-active {
+  #swiper-wrapper-e7347c3512a07a101
+    > div.w-50.swiper-slide.swiper-slide-active {
     top: 0;
     left: 0;
   }
@@ -1185,7 +1127,7 @@ section {
   background: #ed3c0d;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1283,10 +1225,12 @@ section {
 
 .box {
   height: 200px;
-  background: linear-gradient(90deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgb(255, 238, 191) 50%,
-      rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(255, 238, 191) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 #collapseOne,
@@ -1296,28 +1240,34 @@ section {
 #collapseFive,
 #collapseSix,
 #collapseSeven {
-  background: linear-gradient(180deg,
-      rgba(239, 249, 208, 1) 20%,
-      rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(239, 249, 208, 1) 20%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
-#headingOne>button,
-#headingThree>button,
-#headingFive>button,
-#headingSeven>button {
-  background: linear-gradient(90deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgb(255, 238, 191) 50%,
-      rgba(255, 255, 255, 1) 100%);
+#headingOne > button,
+#headingThree > button,
+#headingFive > button,
+#headingSeven > button {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(255, 238, 191) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
-#headingTwo>button,
-#headingFour>button,
-#headingSix>button {
-  background: linear-gradient(90deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(243, 239, 233, 1) 50%,
-      rgba(255, 255, 255, 1) 100%);
+#headingTwo > button,
+#headingFour > button,
+#headingSix > button {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(243, 239, 233, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .accordion-button::after {
@@ -2102,11 +2052,14 @@ section {
 
 .boxx {
   border: 0.4rem solid;
-  border-image: conic-gradient(from var(--angle),
+  border-image: conic-gradient(
+      from var(--angle),
       var(--c2),
       var(--c1) 0.1turn,
       var(--c1) 0.15turn,
-      var(--c2) 0.25turn) 30;
+      var(--c2) 0.25turn
+    )
+    30;
   animation: borderRotate var(--d) linear infinite forwards;
 }
 
