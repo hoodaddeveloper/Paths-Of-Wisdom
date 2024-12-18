@@ -359,12 +359,6 @@ h6,
 }
 
 /* Ensure consistent layout for devices with smaller screens */
-@media (min-width: 1200px) {
-  #hero {
-    height: 90vh;
-  }
-}
-
 @media (max-width: 1200px) {
   #hero {
     height: 40vh !important;
