@@ -358,17 +358,16 @@ h6,
   position: relative;
 }
 
-@media (max-width: 914px) {
+/* Ensure consistent layout for devices with smaller screens */
+@media (min-width: 1200px) {
+  #hero {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 1200px) {
   #hero {
     height: 40vh !important;
-  }
-
-  #hero::after,
-  #hero::before {
-    height: 40vh !important;
-    /* Match the pseudo-element height with the hero */
-    border-radius: 0 0 50% 50% !important;
-    transform: translateX(-50%) rotate(0deg) !important;
   }
 }
 
