@@ -1,3 +1,12 @@
+<!-- Load Navbar -->
+<script defer>
+  fetch("incl/navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar-container").innerHTML = data;
+    });
+</script>
+
 <!DOCTYPE html>
 <html lang="fa-IR">
 
@@ -27,10 +36,10 @@
 
 <body>
   <!-- ======= Navbar ======= -->
-  <?php include("incl/navbar.php"); ?>
+  <div id="navbar-container"></div>
   <main dir="rtl" id="main">
     <!-- ======= Plan Section ======= -->
-    <div class="container mb-5">
+    <section class="container mb-5">
       <div class="box text-center p-4 mb-5 shadow">
         <h3 class="my-4 plan-h3">بسم الله الرحمن الرحیم</h3>
         <img src="assets/img/allame1.jpg" class="allame-pic opacity-75 rounded-circle pic-1 float-end shadow">
@@ -559,10 +568,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
   <!-- ======= Footer ======= -->
-  <?php include("incl/footer.php"); ?>
+  <div id="footer-container"></div>
   <!-- Back To Top -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -577,6 +586,14 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- Load Footer -->
+  <script>
+    fetch("incl/footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-container").innerHTML = data;
+      });
+  </script>
 </body>
 
 </html>

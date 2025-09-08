@@ -64,12 +64,12 @@
       <!-- Navbar -->
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="fw-bolder fs-5 ps-5" href="portfolio.php">درباره مدیریت</a></li>
-          <li><a class="fw-bolder fs-5" href="signup.php">ثبت نام در دوره خودشناسی</a></li>
-          <li><a class="fw-bolder fs-5" href="contact.php">تماس با مجموعه</a></li>
-          <li><a class="fw-bolder fs-5" href="about.php">اهداف مجموعه فرهنگی شِهَابٌ ثَاقِبٌ</a></li>
-          <li><a class="fw-bolder fs-5" href="plan.php">سرآغاز سیر درسی</a></li>
-          <li><a class="fw-bolder fs-5" href="index.php">صفحه اصلی</a></li>
+          <li><a class="fw-bolder fs-5 ps-5" href="portfolio.html">درباره مدیریت</a></li>
+          <li><a class="fw-bolder fs-5" href="signup.html">ثبت نام در دوره خودشناسی</a></li>
+          <li><a class="fw-bolder fs-5" href="contact.html">تماس با مجموعه</a></li>
+          <li><a class="fw-bolder fs-5" href="about.html">اهداف مجموعه فرهنگی شِهَابٌ ثَاقِبٌ</a></li>
+          <li><a class="fw-bolder fs-5" href="plan.html">سرآغاز سیر درسی</a></li>
+          <li><a class="fw-bolder fs-5" href="index.html">صفحه اصلی</a></li>
         </ul>
       </nav>
     </div>
@@ -614,7 +614,7 @@
     </section>
   </main>
   <!-- ======= Footer ======= -->
-  <?php include("incl/footer.php"); ?>
+  <div id="footer-container"></div>
   <!-- Back To Top -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -629,6 +629,14 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- Load Footer -->
+  <script>
+    fetch("incl/footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-container").innerHTML = data;
+      });
+  </script>
 </body>
 
 </html>
